@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
 const Add = () => {
+
+    const handleSubmit = () => {
+        alert('Form submitted');
+    };
+
+
+
+
     return (
         <>
             <Box
@@ -11,12 +19,12 @@ const Add = () => {
                 // noValidate
                 // autoComplete="off"
             ><br />
-                <h2>New Employee</h2>
-                <TextField id="standard-basic" label="Employee ID" variant="standard" /><br />
-                <TextField id="standard-basic" label="Employee Name" variant="standard" /><br />
-                <TextField id="standard-basic" label="Employee Department" variant="standard" /><br />
-                <TextField id="standard-basic" label="Employee Location" variant="standard" /><br /><br />
-                <button variant="contained">Submit</button>
+                <h2>Add Movie</h2>
+                <TextField id="standard-basic" label="ID" variant="standard" /><br />
+                <TextField id="standard-basic" label="Movie" variant="standard" /><br />
+                <TextField id="standard-basic" label="Director" variant="standard" /><br />
+                <TextField id="standard-basic" label="Movie Type" variant="standard" /><br /><br />
+                <button variant="contained" onClick={handleSubmit} >Submit</button>
 
             </Box>
         </>

@@ -9,37 +9,43 @@ import Paper from '@mui/material/Paper';
 
 const rows = [
     {
-        empid: "E101",
-        name: "Mark",
-        department: "Project Manager",
-        location: "TVM"
+        empid: "101",
+        name: "ARM",
+        department: "Anonymous",
+        location: "Thriller",
+        year:"2024"
     },
     {
-        empid: "E102",
-        name: "Jacob",
-        department: "UX Designer",
-        location: "Kochi"
+        empid: "102",
+        name: "Jacobinte Swargarajyam",
+        department: "Vineeth Sreenivasan",
+        location: "Feel good",
+        year:"2015"
     },
     {
-        empid: "E103",
-        name: "Jane Smith",
-        department: "Data Analyst",
-        location: "Bangalore"
+        empid: "103",
+        name: "Kaathal",
+        department: "Jeo Baby",
+        location: "Political",
+        year:"2023"
     }
 ]
 
 const Home = () => {
     return (
 
+        
+        
 
         <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
                 <TableHead>
                     <TableRow>
                         <TableCell>ID</TableCell>
-                        <TableCell align="centre">Name</TableCell>
-                        <TableCell align="centre">Department&nbsp;</TableCell>
-                        <TableCell align="centre">Location&nbsp;</TableCell>
+                        <TableCell align="centre">Movie</TableCell>
+                        <TableCell align="centre">Director&nbsp;</TableCell>
+                        <TableCell align="centre">Type&nbsp;</TableCell>
+                        <TableCell align="centre">Year&nbsp;</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -54,6 +60,7 @@ const Home = () => {
                             <TableCell align="centre">{row.name}</TableCell>
                             <TableCell align="centre">{row.department}</TableCell>
                             <TableCell align="centre">{row.location}</TableCell>
+                            <TableCell align="centre">{row.year}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>
